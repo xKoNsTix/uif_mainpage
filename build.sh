@@ -5,6 +5,8 @@
 
 npm run build:scss
 cp ./src/index.html ./dist/
+cp ./src/about.html ./dist/
+
 cp ./src/images ./dist/
 
 #cp ./src/favicons/*.* ./dist/

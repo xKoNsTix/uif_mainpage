@@ -11478,19 +11478,31 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 400px) {
+  .masthead {
+    margin-left: 0% !important;
+  }
 }
 .masthead .rightImage {
   width: 33%;
   margin-right: 10%;
 }
+@media (max-width: 1000px) {
+  .masthead .rightImage {
+    width: 0%;
+    display: none;
+  }
+}
 .masthead .rightImage img {
   width: 300px;
   padding-bottom: 15%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .masthead .rightImage img {
     display: none;
   }
@@ -11513,10 +11525,16 @@ footer.footer .social-link:hover {
   width: 33%;
   margin-left: 10%;
 }
+@media (max-width: 1000px) {
+  .masthead .leftImage {
+    width: 0%;
+    display: none;
+  }
+}
 .masthead .leftImage img {
   width: 300px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .masthead .leftImage img {
     display: none;
   }
