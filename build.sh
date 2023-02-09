@@ -1,14 +1,19 @@
 #Before WP
 
 #!/bin/sh
-npx sass ./src/sass/style.scss ./dist/style.css
+
+
+npm run build:scss
 cp ./src/index.html ./dist/
+cp ./src/images ./dist/
 
 #cp ./src/favicons/*.* ./dist/
-cp -R ./src/images ./dist/
+cp -R ./src/assets/images ./dist/assets/img
 cp -R ./src/fonts ./dist/fonts
-npx esbuild ./src/js/main.js --bundle --outfile=./dist/main.js  --minify
-npx esbuild ./src/js/scroll.js --bundle --outfile=./dist/scroll.js  --minify
+npm run build:assets
+npm run build:scripts
+# npx esbuild ./src/js/main.js --bundle --outfile=./dist/main.js  --minify
+# npx esbuild ./src/js/scroll.js --bundle --outfile=./dist/scroll.js  --minify
 
 #After WP
 # px sass ./src/sass/style.scss ./public/wp-content/themes/aaron/style.css

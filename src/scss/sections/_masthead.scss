@@ -1,0 +1,125 @@
+/** @format */
+
+//
+// Masthead
+//
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  //background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../assets/img/bg-masthead.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .rightImage {
+    width: 33%;
+    margin-right: 10%;
+    img {
+      width: 300px;
+      padding-bottom: 15%;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .hidden {
+      opacity: 0;
+      filter: blur (5px);
+      transform: translateX(20%);
+      transition: all 1s;
+      height: 100%;
+    }
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+      transform: translateY(0);
+      max-height: 100%;
+    }
+  }
+
+  .leftImage {
+    width: 33%;
+    margin-left: 10%;
+
+    img {
+      width: 300px;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .hidden {
+      opacity: 0;
+      filter: blur (5px);
+      transform: translateX(-20%);
+      transition: all 1s;
+      height: 100%;
+    }
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+      transform: translateY(0);
+      max-height: 100%;
+    }
+  }
+
+  h1 {
+    font-family: "Roboto Mono";
+    font-size: 22px;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    font-family: "Roboto Mono";
+    font-size: 22px;
+    height: 100vh;
+
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+  .button {
+    .hidden {
+      opacity: 0;
+      filter: blur (5px);
+      transform: translateY(-20%);
+      transition: all 1s;
+      height: 100%;
+    }
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+      transform: translateY(0);
+      max-height: 100%;
+    }
+  }
+  .heading {
+    .hidden {
+      opacity: 0;
+      filter: blur (5px);
+      transform: translateY(-20%);
+      transition: all 1s;
+      height: 100%;
+    }
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+      transform: translateY(0);
+      max-height: 100%;
+    }
+  }
+
+  
+}

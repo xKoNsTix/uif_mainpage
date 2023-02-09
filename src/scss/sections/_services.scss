@@ -1,0 +1,100 @@
+/** @format */
+
+//
+// Services
+//
+
+.service-icon {
+  background-color: antiquewhite;
+  color: $primary;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+// ------------_ANIMATIONS_------------
+
+.first {
+  .hidden {
+    opacity: 0;
+    filter: blur (5px);
+    transform: translateX(-10%);
+    transition: all 1s;
+    height: 100%;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    max-height: 100%;
+  }
+}
+
+.second {
+  .hidden {
+    opacity: 0;
+    filter: blur (5px);
+    transform: translateX(-10%);
+    transition: all 1.5s;
+    height: 100%;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    max-height: 100%;
+  }
+}
+.third {
+  .hidden {
+    opacity: 0;
+    filter: blur (5px);
+    transform: translateX(-10%);
+    transition: all 2s;
+    height: 100%;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    max-height: 100%;
+  }
+}
+.third {
+  .hidden {
+    opacity: 0;
+    filter: blur (5px);
+    transform: translateX(-10%);
+    transition: all 2.5s;
+    height: 100%;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    max-height: 100%;
+  }
+}
+.fourth {
+  .hidden {
+    opacity: 0;
+    filter: blur (5px);
+    transform: translateX(-10%);
+    transition: all 3s;
+    height: 100%;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transform: translateY(0);
+    max-height: 100%;
+  }
+}
