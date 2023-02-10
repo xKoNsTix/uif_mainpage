@@ -11484,6 +11484,11 @@ footer.footer .social-link:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 600px) {
+  .masthead .container {
+    max-width: 40%;
+  }
+}
 @media (max-width: 400px) {
   .masthead {
     margin-left: 0% !important;
@@ -11784,7 +11789,7 @@ footer.footer {
 }
 
 /** @format */
-.aboutWrapper {
+.aboutWrapper body {
   background-color: #232323;
 }
 .aboutWrapper .container {
@@ -11795,6 +11800,11 @@ footer.footer {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@media (min-width: 600px) {
+  .aboutWrapper .container {
+    margin-top: 5vh;
+  }
 }
 .aboutWrapper .container .hidden {
   opacity: 0;
@@ -12040,52 +12050,55 @@ body {
   max-height: 100%;
 }
 
-h3, .h3 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  -webkit-animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0;
+@media (min-width: 600px) {
+  .typewriter {
+    /* The typing effect */
+    /* The typewriter cursor effect */
   }
-  to {
-    width: 100%;
+  .typewriter h3, .typewriter .h3 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
+    -webkit-animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+            animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
   }
-}
-@keyframes typing {
-  from {
-    width: 0;
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
-  to {
-    width: 100%;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
-}
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
+  @-webkit-keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #1c809f;
+    }
   }
-  50% {
-    border-color: #1C809F;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #1C809F;
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #1c809f;
+    }
   }
 }

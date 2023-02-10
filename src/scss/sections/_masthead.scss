@@ -5,6 +5,11 @@
 //
 
 .masthead {
+  .container {
+    @media (min-width: 600px) {
+      max-width: 40%;
+    }
+  }
   min-height: 30rem;
   position: relative;
   display: table;

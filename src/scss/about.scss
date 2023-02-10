@@ -1,13 +1,18 @@
 /** @format */
 
 .aboutWrapper {
-  background-color: #232323;
+  body {
+    background-color: #232323;
+  }
   .container {
     background-color: antiquewhite;
     max-width: 800px;
     margin: auto;
     padding: 30px;
     text-align: center;
+    @media (min-width: 600px) {
+      margin-top: 5vh;
+    }
 
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
