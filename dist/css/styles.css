@@ -11937,6 +11937,11 @@ footer.footer {
   max-width: 60vw;
   border-radius: 10px;
 }
+@media (min-width: 2000px) {
+  .blog_content img {
+    max-width: 40vw;
+  }
+}
 .blog_content h1, .blog_content .h1 {
   color: #333 !important;
   font-weight: 700 !important;

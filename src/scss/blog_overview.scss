@@ -6,6 +6,9 @@
 
   img {
     max-width: 60vw;
+    @media(min-width:2000px){
+      max-width: 40vw;
+    }
     border-radius: 10px;
   }
   h1 {
