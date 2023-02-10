@@ -6,6 +6,8 @@
 npm run build:scss
 cp ./src/index.html ./dist/
 cp ./src/about.html ./dist/
+cp ./src/mail.php ./dist/
+cp ./src/contact.html ./dist/
 
 cp ./src/images ./dist/
 
