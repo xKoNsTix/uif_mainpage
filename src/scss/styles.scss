@@ -96,7 +96,8 @@ body {
 
 // Typewriter Main
 .typewriter {
-  @media (min-width: 600px) {
+
+
     h3 {
       overflow: hidden; /* Ensures the content is not revealed until the animation */
       border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -104,6 +105,24 @@ body {
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: 0.15em; /* Adjust as needed */
       animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+
+    }
+    @media(max-width:1500px){
+      h3{
+      font-size:20px !important;
+     }
+    }
+
+    @media(max-width:1200px){
+      h3{
+      font-size:16px !important;
+     }
+    }
+
+    @media(max-width:px){
+      h3{
+      font-size:10px !important;
+     }
     }
 
     /* The typing effect */
@@ -127,4 +146,4 @@ body {
       }
     }
   }
-}
+

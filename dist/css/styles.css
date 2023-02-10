@@ -12050,55 +12050,68 @@ body {
   max-height: 100%;
 }
 
-@media (min-width: 600px) {
-  .typewriter {
-    /* The typing effect */
-    /* The typewriter cursor effect */
-  }
+.typewriter {
+  /* The typing effect */
+  /* The typewriter cursor effect */
+}
+.typewriter h3, .typewriter .h3 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+          animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+}
+@media (max-width: 1500px) {
   .typewriter h3, .typewriter .h3 {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em;
-    /* Adjust as needed */
-    -webkit-animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
-            animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+    font-size: 20px !important;
   }
-  @-webkit-keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 80%;
-    }
+}
+@media (max-width: 1200px) {
+  .typewriter h3, .typewriter .h3 {
+    font-size: 16px !important;
   }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 80%;
-    }
+}
+@media (max-width: px) {
+  .typewriter h3, .typewriter .h3 {
+    font-size: 10px !important;
   }
-  @-webkit-keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #1c809f;
-    }
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
   }
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #1c809f;
-    }
+  to {
+    width: 80%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1c809f;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1c809f;
   }
 }
