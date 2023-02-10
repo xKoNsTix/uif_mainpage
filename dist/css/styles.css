@@ -11922,6 +11922,58 @@ footer.footer {
   max-width: 70%;
 }
 
+/** @format */
+.blog_content img {
+  max-width: 60vw;
+  border-radius: 10px;
+}
+.blog_content h1, .blog_content .h1 {
+  color: #333 !important;
+  font-weight: 700 !important;
+}
+.blog_content a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.blog_content a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.blog_content .summary {
+  border: solid 2px #a4a4a4 !important;
+  padding: 25px !important;
+  background-color: antiquewhite !important;
+  box-shadow: 0 0 0.5 !important;
+  border-radius: 10px;
+}
+.blog_content .summary .title {
+  display: block !important;
+  padding: 0 0 15px 0 !important;
+}
+.blog_content .summary .teaser-text {
+  padding: 0 0 15px 0 !important;
+}
+.blog_content .thumbnail {
+  border: none !important;
+}
+.blog_content .spacer-50 {
+  margin: 50px 0 !important;
+}
+.blog_content .row .hidden {
+  opacity: 0;
+  filter: blur 100px;
+  transform: translateX(-20%);
+  transition: all 0.5s;
+  height: 100%;
+}
+.blog_content .row .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  max-height: 100%;
+}
+
 body {
   font-family: "Roboto Mono";
 }
@@ -11986,4 +12038,54 @@ body {
   transform: translateX(0);
   transform: translateY(0);
   max-height: 100%;
+}
+
+h3, .h3 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1C809F;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1C809F;
+  }
 }

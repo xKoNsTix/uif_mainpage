@@ -1,0 +1,32 @@
+#calendar {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  #events {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #events li {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eee;
+  }
+
+  #events h2 {
+    margin: 0;
+    color: #333;
+  }
+
+  #events p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
