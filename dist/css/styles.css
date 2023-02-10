@@ -12067,6 +12067,7 @@ body {
   /* Adjust as needed */
   -webkit-animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
           animation: typing 2s steps(40, end), blink-caret 1.2s step-end infinite;
+  font-size: 22px !important;
 }
 @media (max-width: 1500px) {
   .typewriter h3, .typewriter .h3 {
