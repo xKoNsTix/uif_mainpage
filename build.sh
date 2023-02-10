@@ -9,6 +9,7 @@ cp ./src/about.html ./dist/
 cp ./src/mail.php ./dist/
 cp ./src/contact.html ./dist/
 cp ./src/team.html ./dist/
+cp ./src/portfolio.html ./dist/
 
 
 cp ./src/images ./dist/

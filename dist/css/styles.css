@@ -11898,6 +11898,30 @@ footer.footer {
   color: #fff;
 }
 
+.header {
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.portfolio .first {
+  display: flex;
+  flex-direction: row;
+  height: 30vh !important;
+  margin-bottom: 30vh;
+}
+.portfolio .first .left {
+  width: 50%;
+}
+.portfolio .first .left img {
+  max-width: 100%;
+}
+.portfolio .first .right {
+  width: 50%;
+}
+.portfolio .first .right h3 p, .portfolio .first .right .h3 p {
+  max-width: 70%;
+}
+
 body {
   font-family: "Roboto Mono";
 }
