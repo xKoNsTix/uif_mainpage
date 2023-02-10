@@ -1,5 +1,16 @@
 /** @format */
+.contactWrapper {
+  h2 {
+    @media (min-width: 678px) {
+      padding-top: 100px;
+      font-size: 32px;
+    }
+    @media (max-width: 678px) {
+      padding-bottom: 100px;
 
+    }
+  }
+}
 .row {
   display: flex;
   justify-content: center;
@@ -7,28 +18,25 @@
   margin-right: 20px;
 }
 .text-center.w-responsive.mx-auto.mb-5 {
-  margin-top:10vh;
+  margin-top: 10vh;
   max-width: 600px;
 
   @media (max-width: 600px) {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top:-4vh;
+    margin-top: -4vh;
   }
 }
 @media (max-width: 600px) {
   .text-center.w-responsive.mx-auto.mb-5 {
     margin-left: 10% !important;
-    margin-right: 10%!important;
-
-
+    margin-right: 10% !important;
   }
 }
 
-footer.footer{
-  padding-top:0rem !important;
-  padding-bottom:0rem !important;
+footer.footer {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
 }
 
 // ....
-

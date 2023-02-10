@@ -6,6 +6,11 @@
   height:100vh;
 
   .container {
+    body{
+      background-color:  rgb(254, 227, 193);
+    }
+    background-color: rgb(254, 227, 193);
+    width:100%;
 
     align-items: center;
     .hidden {
@@ -33,6 +38,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    width:100%;
   }
 
   .container .team .member {
