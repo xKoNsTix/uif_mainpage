@@ -11,6 +11,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
 :root {
   --bs-blue: #1D809F;
   --bs-indigo: #6610f2;
@@ -11782,6 +11783,121 @@ footer.footer {
   padding-bottom: 0rem !important;
 }
 
+/** @format */
+.aboutWrapper {
+  background-color: #232323;
+}
+.aboutWrapper .container {
+  background-color: antiquewhite;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.aboutWrapper .container .hidden {
+  opacity: 0;
+  filter: blur 5px;
+  transform: translateX(0%);
+  transition: all 2s;
+  height: 100%;
+}
+.aboutWrapper .container .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  max-height: 100%;
+}
+.aboutWrapper h1, .aboutWrapper .h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.aboutWrapper p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.aboutWrapper .highlight {
+  color: #333;
+  font-weight: bold;
+}
+
+/** @format */
+.teamWrapper {
+  background-color: antiquewhite;
+}
+.teamWrapper .container {
+  margin-top: 50px;
+  align-items: center;
+}
+.teamWrapper .container .hidden {
+  opacity: 0;
+  filter: blur 5px;
+  transform: translateX(0%);
+  transition: all 1s;
+  height: 100%;
+}
+.teamWrapper .container .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  max-height: 100%;
+}
+.teamWrapper img {
+  border-radius: 50%;
+}
+.teamWrapper .container .team {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.teamWrapper .container .team .member {
+  width: 325px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+.teamWrapper .container .team .member img {
+  width: 80px;
+}
+.teamWrapper .container .team .member h3, .teamWrapper .container .team .member .h3 {
+  color: #444;
+}
+.teamWrapper .container .team .member span {
+  font-size: 12px;
+  color: #999;
+}
+.teamWrapper .container .team .member p {
+  margin: 15px 0;
+  font-weight: 400;
+  color: #999;
+  font-size: 15px;
+  text-align: justify;
+}
+.teamWrapper .container .team .member .btn a {
+  background: #ddd;
+  display: block;
+  float: right;
+  width: 125px;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #444;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.teamWrapper .container .team .member .btn a:hover {
+  background: #1d809f;
+  color: #fff;
+}
+
 body {
   font-family: "Roboto Mono";
 }
@@ -11816,4 +11932,34 @@ body {
   50% {
     opacity: 0;
   }
+}
+
+.content-section .hidden {
+  opacity: 0;
+  filter: blur 5px;
+  transform: translateX(0%);
+  transition: all 1s;
+  height: 100%;
+}
+.content-section .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  max-height: 100%;
+}
+
+.list-inline .mb-5 .hidden {
+  opacity: 0;
+  filter: blur 5px;
+  transform: translateX(0%);
+  transition: all 2s;
+  height: 100%;
+}
+.list-inline .mb-5 .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+  max-height: 100%;
 }
