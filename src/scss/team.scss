@@ -2,10 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
 .teamWrapper {
-  background-color: antiquewhite;
+  background-color: rgb(254, 227, 193);
+  height:100vh;
 
   .container {
-    margin-top: 50px;
+
     align-items: center;
     .hidden {
       opacity: 0;

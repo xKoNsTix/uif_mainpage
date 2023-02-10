@@ -11836,10 +11836,10 @@ footer.footer {
 
 /** @format */
 .teamWrapper {
-  background-color: antiquewhite;
+  background-color: #fee3c1;
+  height: 100vh;
 }
 .teamWrapper .container {
-  margin-top: 50px;
   align-items: center;
 }
 .teamWrapper .container .hidden {
